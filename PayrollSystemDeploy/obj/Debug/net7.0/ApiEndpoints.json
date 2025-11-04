@@ -1,0 +1,81 @@
+[
+  {
+    "ContainingType": "PayrollWebApp.Controllers.AllowanceController",
+    "Method": "GetAllowanceById",
+    "RelativePath": "api/Allowance/allowance/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PayrollWebApp.Controllers.AllowanceController",
+    "Method": "GetAllAllowances",
+    "RelativePath": "api/Allowance/allowances",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PayrollWebApp.Controllers.AllowanceController",
+    "Method": "AddAllowance",
+    "RelativePath": "api/Allowance/allowances",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "allowanceDto",
+        "Type": "PayrollWebApp.DTO.AllowanceDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PayrollWebApp.Controllers.AllowanceController",
+    "Method": "UpdateAllowance",
+    "RelativePath": "api/Allowance/allowances/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "allowanceDto",
+        "Type": "PayrollWebApp.DTO.AllowanceDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PayrollWebApp.Controllers.AllowanceController",
+    "Method": "DeleteAllowance",
+    "RelativePath": "api/Allowance/allowances/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

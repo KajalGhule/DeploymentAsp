@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "k/ob3Nv46+nta002iebRjb6CSOAD0LRx2caH8klZiz8=",
+  "Source": "PayrollSystemDeploy",
+  "BasePath": "_content/PayrollSystemDeploy",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

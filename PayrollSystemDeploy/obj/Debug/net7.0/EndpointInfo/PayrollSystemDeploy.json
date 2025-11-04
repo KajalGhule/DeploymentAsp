@@ -1,0 +1,208 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "PayrollSystemDeploy",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Allowance/allowances": {
+      "get": {
+        "tags": [
+          "Allowance"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Allowance"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AllowanceDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AllowanceDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AllowanceDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Allowance/allowances/{id}": {
+      "put": {
+        "tags": [
+          "Allowance"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AllowanceDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AllowanceDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AllowanceDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Allowance"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Allowance/allowance/{id}": {
+      "get": {
+        "tags": [
+          "Allowance"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AllowanceDTO": {
+        "type": "object",
+        "properties": {
+          "allowanceID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "allowanceName": {
+            "type": "string",
+            "nullable": true
+          },
+          "percentage": {
+            "type": "number",
+            "format": "double"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "amount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "includeInForm16": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "form16Section": {
+            "type": "string",
+            "nullable": true
+          },
+          "includeInGross": {
+            "type": "string",
+            "nullable": true
+          },
+          "allowanceType": {
+            "type": "string",
+            "nullable": true
+          },
+          "crUser": {
+            "type": "string",
+            "nullable": true
+          },
+          "crDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "trUser": {
+            "type": "string",
+            "nullable": true
+          },
+          "trDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "deleted": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
